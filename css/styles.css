@@ -1,0 +1,361 @@
+/********************************
+nav design
+*********************************/
+#nav{
+	text-align: center;
+}
+
+#nav ul li {
+	background-color: white;
+	padding: 10px;
+	margin: 5px -10px 5px -50px;
+}
+
+#home img {
+	max-width: 200px;
+	padding: 20px 0px 10px 0px;
+}
+
+#home p {
+	padding: 0px 0px 20px 0px;
+}
+/********************************
+general
+*********************************/
+
+body {
+	background-color: #F0FAFB;
+	text-align: center;
+	padding: 10px 0px;
+	margin: 20px;
+}
+	
+ul li {
+	list-style-type: none;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+h1, h2 {
+	font-family: 'Lobster', sans-serif;
+	color: orange;
+}
+
+h3, p {
+	font-family: 'Josefin Sans',sans-serif;
+	color: black;
+}
+
+/***************
+portfolio styles
+****************/
+#portfolio {
+	background-color: white;
+	text-align: center;
+	padding: 10px 0px;
+	margin: 0px -20px;
+	}
+
+
+#portfolio img {
+	max-width: 100%;
+	padding: 10px 10px 10px 0px;
+	margin: 10px -20px 5px -50px;
+}
+
+#portfolio li {
+	font-size: .8em;
+	padding: 10px 0px;
+}
+
+#portfolio li h3, #portfolio li p {
+	margin: 10px 15px 0px -30px;
+}
+
+#portfolio li h3 {
+	font-weight: 700;
+}
+
+/********
+Skills
+********/
+
+#skills {
+	Background-color: lightgray;
+	padding: 30px;
+	margin: 0px -30px;
+}
+
+#skills p, #skills ul li {
+	font-size: 1.2em;
+}
+
+#skills ul li{
+	padding: 5px;
+	margin-left: -30px;
+}
+
+/********
+Contact
+********/
+
+#contact{
+	padding:20px 0px;
+	margin: 20px 0px 30px 0px;
+}
+
+#contact p {
+	font-size: 1.2em;
+}
+
+#contact a {
+	color: gray;
+	font-size: 1.2em;;
+}
+
+/********
+footer
+********/
+
+footer {
+	border-top: 1px solid grey;
+	padding: 10px 0px;
+	margin: 10px -10px;
+}
+
+footer span{
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+#left{
+	float: left;
+	color: orange;
+}
+
+#right{
+	float: right;
+}
+
+.footernav li {
+	display: none;
+}
+
+/*******
+media queries: tablet
+********/
+
+@media (min-width: 768px) {
+	/***
+	navigation
+	***/
+	
+	#nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color:#F0FAFB;
+		padding: 0px;
+		margin: 0px 170px -10px 180px;
+		 
+	}
+	
+	#nav ul li {
+		background-color: #F0FAFB;
+	}
+	
+	#nav ul li:hover {
+		font-size: 1.2em;
+	}
+	
+	/******
+	Home
+	*******/
+	
+	#home, #home p, #home img {
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 20px 0px;
+		margin: 0px -10px 0px 0px;
+	}
+	
+	#home p {
+		align-items: flex-start;
+		max-width: 55%;
+		font-size: 1.45em;
+		text-align: left;
+		margin: 25px 0px 0px 0px;
+	}
+
+	#home img {
+		min-width: 40%;
+		margin: auto;
+	}
+	
+	/*****
+	portfolio
+	******/
+	#portfolio {
+		padding-top: 20px;
+	}
+	
+	#portfolio ul li {
+		display: inline-block;
+		width: 45%;
+		padding: 20px 10px;
+		vertical-align: top;
+	}
+	
+	#portfolio ul li p {
+		padding: 5px 40px;
+	}
+	
+	/********
+	contact
+	********/
+	#contact h2 {
+		padding: 10px 0px;
+		margin: 30px 0px;
+	}
+	
+	#contact p {
+		font-size: 1.5em;
+		padding: 0px 80px;
+		margin-top: 10px;
+	}
+	
+	/*********
+	footer
+	**********/
+	
+	.footernav li{
+		display: inline-block;
+		float: right;
+		padding: 10px 10px;
+		margin: 0px 10px 80px 20px;
+	}
+	
+	#right {
+		display: none;
+	}
+	
+}
+
+/*******
+media queries: desktop
+*********/
+
+@media (min-width: 1024px) {
+
+	/***
+	navigation
+	***/
+	
+	#nav h1 {
+		display: inline;
+		float: left;
+		margin-top: 30px;
+		margin-left: 50px;
+	}
+	
+	#nav ul {
+	display: inline;
+	 float: right;
+	 margin: 0px;
+	}
+	
+	#nav ul li {
+		display: inline-block;
+		float: left;
+	 	padding: 10px;
+	 	margin: 30px 50px 10px 10px;
+	}
+	
+	/******
+	Home
+	*******/
+	
+	#home, #home p, #home img {
+		clear: both;
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 20px 0px;
+		margin: 0px 5px 0px 50px;
+	}
+	
+	#home p {
+		align-items: flex-start;
+		max-width: 50%;
+		font-size: 1.45em;
+		text-align: left;
+		margin: 25px 0px 0px 0px;
+	}
+
+	#home img {
+		min-width: 40%;
+		margin: auto;
+	}
+
+	#home {
+		padding-bottom:30px;
+		margin-bottom: 50px;
+		overflow: hidden;
+	}
+	/*****
+	portfolio
+	******/
+	#portfolio {
+		padding-top: 30px;
+		margin: 0px 5px;
+	}
+	
+	#portfolio ul li {
+		width: 30%;
+		padding: 20px 5px;
+	}
+	
+	#portfolio ul li p {
+		padding: 5px 30px;
+	}
+	
+	/*******
+	skills
+	********/
+	
+	#skills { 
+		margin: 20px 5px;
+	}
+	
+	/*******
+	contact
+	********/
+	
+	#contact {
+		margin-bottom: 80px;
+	}
+	
+	/*******
+	footer
+	********/
+	
+	#footer {
+		padding-bottom: 0px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
